@@ -39,32 +39,34 @@ function draw() {
       isActive = false;
     }
   }
+ 
+// this section pops up a question as a result of the spin  
   
-  push();
-  fill(255);
-  textSize(40);
-  translate (0, 250, 0);
-  if (finish == true){
-   if (randomFace == 0){
-     text('What was little ____ like in kindergarten?', 0, 0);
-   }
-     if (randomFace == 1){
-     text('How do you see yourself as a leader?', 0, 0);
-   }
-     if (randomFace == 2){
-     text('Who lent you a helping hand during a challenging time?', 0, 0);
-   }
-     if (randomFace == 3){
-     text('Who or what inspired you to study STEAM?', 0, 0);
-   }
-     if (randomFace == 4){
-     text('In an ideal world women are ___________ .', 0, 0);
-   }
-     if (randomFace == 5){
-     text('What are 3 things you see as the markers of success? Why?', 0, 0);
-   }
-  }
-  pop();
+//   push();
+//   fill(255);
+//   textSize(40);
+//   translate (0, 250, 0);
+//   if (finish == true){
+//    if (randomFace == 0){
+//      text('What was little ____ like in kindergarten?', 0, 0);
+//    }
+//      if (randomFace == 1){
+//      text('How do you see yourself as a leader?', 0, 0);
+//    }
+//      if (randomFace == 2){
+//      text('Who lent you a helping hand during a challenging time?', 0, 0);
+//    }
+//      if (randomFace == 3){
+//      text('Who or what inspired you to study STEAM?', 0, 0);
+//    }
+//      if (randomFace == 4){
+//      text('In an ideal world women are ___________ .', 0, 0);
+//    }
+//      if (randomFace == 5){
+//      text('What are 3 things you see as the markers of success? Why?', 0, 0);
+//    }
+//   }
+//   pop();
   
   
   //right dice
@@ -83,7 +85,7 @@ function draw() {
   push();
   translate(0, 0, 101); //51 because I'm just adding one more pixel to half the size of my box
   fill(255);
-  text("IDENTITY",0,0)
+  text("Sexuality",0,0)
   pop();
   
   //right face
@@ -91,7 +93,7 @@ function draw() {
   translate(101, 0, 0);
   rotateY(PI/2)
   fill(255);
-  text("MOMENTS",0,0)
+  text("Relationships",0,0)
   pop();
   
   //left face
@@ -99,7 +101,7 @@ function draw() {
   translate(-101, 0, 0);
   rotateY(-PI/2)
   fill(255);
-  text("LEADERSHIP",0,0)
+  text("Identity",0,0)
   pop();
   
   //back face
@@ -107,7 +109,7 @@ function draw() {
   translate(0, 0, -101);
   rotateY(-PI)
   fill(255);
-  text("STEAM",0,0)
+  text("Kink",0,0)
   pop();
   
   //top face
@@ -115,7 +117,7 @@ function draw() {
   translate(0, -101, 0);
   rotateX(PI/2)
   fill(255);
-  text("GENDER EQUALITY",0,0)
+  text("Self Acceptance",0,0)
   pop();
   
   //botton face
@@ -123,7 +125,7 @@ function draw() {
   translate(0, 101, 0);
   rotateX(-PI/2)
   fill(255);
-  text("DREAMS",0,0)
+  text("Pleasure",0,0)
   pop();
   
    pop();
@@ -132,9 +134,11 @@ function draw() {
   //left Dice
   push();
   translate(-170, 0);
+   rotateY(-PI)
+ fill(90);
    pointLight(38, 37, 221, -200, -200);
    pointLight(130, 95, 255, 800, 800);
-   specularMaterial(0, 0, 255);
+  specularMaterial(0, 0, 255);
   rotateX(radians(anglePos.x));
   rotateY(radians(anglePos.y));
   box(200);
