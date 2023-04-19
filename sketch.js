@@ -148,7 +148,7 @@ function draw() {
   push();
   translate(0, 0, 101); //51 because I'm just adding one more pixel to half the size of my box
   fill(255);
-  text("ASK SOMEONE",0,0)
+  text("ASK",0,0)
   pop();
   
   //right face
@@ -156,7 +156,7 @@ function draw() {
   translate(101, 0, 0);
   rotateY(PI/2)
   fill(255);
-  text("SHARE AN \n EXPERIENCE",0,0)
+  text("SHARE",0,0)
   pop();
   
   //left face
@@ -164,7 +164,7 @@ function draw() {
   translate(-101, 0, 0);
   rotateY(-PI/2)
   fill(255);
-  text("ASK SOMEONE",0,0)
+  text("ASK",0,0)
   pop();
   
   //back face
@@ -172,7 +172,7 @@ function draw() {
   translate(0, 0, -101);
   rotateY(-PI)
   fill(255);
-  text("SHARE AN \n EXPERIENCE",0,0)
+  text("SHARE",0,0)
   pop();
   
   //top face
@@ -180,7 +180,7 @@ function draw() {
   translate(0, -101, 0);
   rotateX(PI/2)
   fill(255);
-  text("ASK SOMEONE",0,0)
+  text("ASK",0,0)
   pop();
   
   //botton face
@@ -188,7 +188,7 @@ function draw() {
   translate(0, 101, 0);
   rotateX(-PI/2)
   fill(255);
-  text("SHARE AN \n EXPERIENCE",0,0)
+  text("SHARE",0,0)
   pop();
   
    pop();
