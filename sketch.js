@@ -109,7 +109,7 @@ function draw() {
   translate(0, 0, -101);
   rotateY(-PI)
   fill(255);
-  text("Kink",0,0)
+  text("Sex & Kink",0,0)
   pop();
   
   //top face
@@ -117,7 +117,7 @@ function draw() {
   translate(0, -101, 0);
   rotateX(PI/2)
   fill(255);
-  text("Self Acceptance",0,0)
+  text("Wild",0,0)
   pop();
   
   //botton face
